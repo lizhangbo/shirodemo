@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="UTF-8">
+<title>testThymeleaf</title>
+</head>
+<script lang="javascript">
+
+    function login() {
+        console.log("login");
+    }
+</script>
+<body>
+<hr/>
+
+<form action="/doLogin" method="post">
+    姓名：<input name="username" type="text" value="aaa">
+    密码：<input name="password" type="password" value="123456">
+    <input type="submit" value="提交" onsubmit="login()">
+</form>
+</body>
+</html>
